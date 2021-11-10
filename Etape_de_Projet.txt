@@ -1,0 +1,34 @@
+les étapes du projet
+1re étape
+
+ => j'ai installer laravel à l'aide de la commande : composer create-project laravel/laravel test-info prefer-dist
+ => le nom du projet c'est test-info
+ =>  prefer-dist : pour télécharger la dernière version de laravel
+
+2e étape
+ MVC (model-view-controller)
+=>pour créer un controller j'ai utiliser la commande : php artisan make:controller TestController
+   (Toutes les details sont dans le code)
+=>pour créer le model  j'ai utilisée la commande :  php artisan make:model Test --migration 
+=>le nom de la vue c'est test.blade.php
+
+dans le fichier .env j'ai modifié le nom de ma base de données <laravel>
+
+j'ai utilisé phpmyAdmin pour la partie de la base de donnée 
+pour mettre en place le serveur web local j'ai utilisé xamp 
+
+pour le design de la page web  j'ai utilisé bootstrap 
+
+lors de l'envoi du formulaire j'ai rajouté un msg <L'enregistrement a été créé avec succès !>
+
+dans web.php j'ai rajouté la route => Route::get('/test','App\Http\Controllers\TestController@index'); avec le nom du controller
+et pour envoyer les donnéer de la formulaire j'ai fait la  méthode post => Route::post('/test', 'App\Http\Controllers\TestController@create');
+
+pour affectation en masse j'ai utilisé $guarded pour protéger les  champs qui ne sont pas assignables en masse
+
+
+
+
+
+  
+
